@@ -1,8 +1,351 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Nicholas Egan</title>
+
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+        <!-- <link rel="stylesheet" href="https://bootswatch.com/yeti/bootstrap.min.css" /> -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <script>window.location.replace('http://egansoft.com')</script>
+
+        <!-- <div class="container">
+            <h1>Nicholas Egan</h1>
+        </div> -->
+
+        <div class="container-fluid" id="particles-wrap">
+            <div class="row" id="particles"></div>
+        </div>
+
+        <header class="container" id="home-container">
+            <div class="row" id="home">
+                <div class="col-xs-12" id="head">
+                    <h1 class="banner-text" id="banner-name">Nicholas Egan</h1>
+                    <h3>mrcomputer.science</h3>
+
+                    <ul class="list-inline" id="connect-buttons">
+                        <li>
+                            <a href="/downloads/Nicholas Egan Resume.pdf" target="_blank" class="btn btn-default btn-lg">
+                                <i class="fa fa-download"></i> Resume
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/egansoft" target="_blank" class="btn btn-default btn-lg">
+                                <i class="fa fa-github"></i> GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/nicholasegansoft" target="_blank" class="btn btn-default btn-lg">
+                                <i class="fa fa-linkedin"></i> LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://challengepost.com/nicholasegan" target="_blank" class="btn btn-default btn-lg">
+                                <i class="fa fa-code"></i> ChallengePost
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://egansoft.com" target="_blank" class="btn btn-default btn-lg">
+                                <i class="fa fa-circle-o-notch"></i> Company
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-fluid" id="navbar-wrap">
+            <nav class="navbar navbar-default" id="nav-out">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item active"><a href="#">Home</a></li>
+                            <li class="nav-item"><a href="#about">About</a></li>
+                            <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+                            <li class="nav-item"><a href="#work">Work &amp; Education</a></li>
+                            <li class="nav-item"><a href="#skills">Skills</a></li>
+                            <li class="nav-item"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!--/.container-fluid -->
+            </nav>
+        </div>
+
+        <div class="container-fluid section-container" id="about-container">
+            <div class="container">
+                <section class="row" id="about">
+
+                    <div class="col-xs-12">
+                        <h2 class="page-title">About Me</h2>
+                    </div>
+
+                    <div class="col-sm-8">
+                        <h3>Nicholas Egan</h3>
+                        <h4><em>Programmer, engineer, student, hacker, entrepreneur</em></h4>
+
+                        <p id="bio-start">
+                            Ever since I picked up coding at age 10, the power to create has been an irresistable pull.
+                            I taught myself by pouring over books, and was blown away by the possibilities when I
+                            discovered how software development could unleash my ideas and make them real. I started
+                            <a href="http://egansoft.com" target="_blank">Egansoft</a> in 7th grade initially as a
+                            repository for my ever growing list of programming projects, and eventually into a business
+                            for publishing software and creating web sites for clients. I take every opportunity
+                            available to learn more and do more, by founding and running a hack club at my high school,
+                            interning at research labs and software corporations, assembling teams to take to hackathons,
+                            and creating web apps to help members of my community.
+                        </p>
+                    </div>
+
+                    <div class="col-sm-3 col-sm-offset-1">
+                        <img src="img/me.png" alt="me" id="me-img" class="img-responsive" />
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+        <div class="container-fluid section-container" id="portfolio-container">
+            <div class="container">
+                <section class="row" id="portfolio">
+
+                    <div class="col-xs-12">
+                        <h2 class="page-title">Top Software Projects</h2>
+                    </div>
+
+                    <div class="col-xs-12">
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="http://beshowy.com/" target="_blank">
+                                    <img src="img/portfolio/showy.png" class="img-responsive portfolio-image" alt="Showy" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title"><a href="http://beshowy.com/" target="_blank">Showy</a></h3>
+                                <p class="description-text"> Showy lets you play your presentation on the
+                                    device of everyone in your audience instead of through a projector and
+                                    PowerPoint. Simply create your presentation using the Showy editor, share the
+                                    link with your audience, and control your presentation from your admin page.
+                                    It runs completely in the browser, allowing it to be completely cross-platform.
+                                    Sign up at <a href="http://beshowy.com" target="_blank">beshowy.com</a> to create
+                                    and show your presentations, or try out the demo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="http://challengepost.com/software/znapper-wp9rh" target="_blank">
+                                    <img src="img/portfolio/znapper.png" class="img-responsive portfolio-image" alt="Znapper" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="http://challengepost.com/software/znapper-wp9rh" target="_blank">Znapper</a>
+                                    <span class="portfolio-with">(with Michael Lin, Julia Lu, and Ethan Ko)</span>
+                                </h3>
+                                <p class="description-text">Znapper allows friends to have category-based selfie battles.
+										Simply challenge your Facebook friend to a new battle and take a selfie that matches
+										the given prompt. Your friend will respond to this challenge with their own selfie that
+										matches the prompt, and your mutual Facebook friends will vote for the victor.
+										We made Znapper in 30 hours at the <a href="http://www.hshacks.com/" target="_blank">
+										HSHacks II</a> hackathon, and won the <a href="http://challengepost.com/software/znapper-wp9rh"
+										target="_blank">Most Creative</a> grand prize. Releases for both Android and iOS
+										are coming soon.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="http://www.textinflator.com" target="_blank">
+                                    <img src="img/portfolio/textinflator.png" class="img-responsive portfolio-image" alt="Text Inflator" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="http://www.textinflator.com" target="_blank">Text Inflator</a>
+                                </h3>
+                                <p class="description-text">Text Inflator is a web application developed by Egansoft
+										that expands the length of a block of writing without adding any additional ideas, meaning,
+										or value. While it is not recommended to be used for actual formal assignments, it was
+										developed as a simple experiment in the field of natural language processing. See it live
+										at <a href="http://www.textinflator.com" target="_blank">textinflator.com
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="https://play.google.com/store/apps/details?id=com.teamturnt.brainhacks" target="_blank">
+                                    <img src="img/portfolio/brainhacks.png" class="img-responsive portfolio-image" alt="Brain Hacks" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="https://play.google.com/store/apps/details?id=com.teamturnt.brainhacks" target="_blank">
+                                        Brain Hacks
+                                        <span class="portfolio-with">(with Michael Lin, Aaron Barbieri-Aghib, and Steven Povlitz)</span>
+                                    </a>
+                                </h3>
+
+                                <p class="description-text">Brain Hacks is a cross-platform mobile application that
+										measures the mental impairment of people who are tired, intoxicated, or concussed
+										in comparison to their baseline. We
+										are all familiar with these symptoms, but are bad at evaluating how much it is
+										affecting us. Brain Hacks uses a combination of medically proven and heuristic tests
+										to quantify an individual's mental abilities in four key areas that are the most apparent
+										detriments to mental state. We made this app in 48 hours at
+										<a href="http://challengepost.com/software/brain-hacks" target="blank">LAUNCH
+										Hackathon 2015</a>. It is available on the
+										<a href="https://play.google.com/store/apps/details?id=com.teamturnt.brainhacks" target="_blank">
+										Google Play App Store</a>, and an iOS version is coming soon.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="https://play.google.com/store/apps/details?id=com.egansoft.physics.sketchpad" target="_blank">
+                                    <img src="img/portfolio/physicssketchpad.png" class="img-responsive portfolio-image"
+                                        alt="Physics Sketchpad" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="https://play.google.com/store/apps/details?id=com.egansoft.physics.sketchpad" target="_blank">
+                                        Physics Sketchpad
+                                    </a>
+                                </h3>
+
+                                <p class="description-text">Physics Sketchpad is a physics simulator for Android in which one can
+										observe the effect of different forces upon objects. It can be used as a planet simulator
+										or projectile simulator if one adjusts the forces accordingly. Forces include gravity
+										between objects, global gravity, collision adjustments, drag, acceleration, and more.
+										Download it on the
+										<a href="https://play.google.com/store/apps/details?id=com.egansoft.physics.sketchpad&hl=en"
+											target="_blank">
+											Google Play App Store</a>, or read reviews by
+										<a href="https://www.appolearning.com/android-apps/physics-sketchpad-beta/b37557e6-a5a4-11e4-8b07-bc764e05085a"
+											target="_blank">
+											AppoLearning</a> or
+										<a href="http://www.android4schools.com/2013/02/03/physics-sketchpad-a-physics-simulator-for-android/"
+											target="_blank">
+											Android 4 Schools</a>.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row" id="skills">
+                <div class="col-xs-12">
+                    <h2 class="page-title">My Skills</h2>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="row skill-row">
+                        <div class="col-xs-3">
+                            <img src="img/skills/js.png" alt="JavaScript" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-3">
+                            <img src="img/skills/android.png" alt="Android" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-3">
+                            <img src="img/skills/html5.png" alt="HTML5" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-3">
+                            <img src="img/skills/ruby.png" alt="Ruby" class="img-responsive" />
+                        </div>
+                    </div>
+
+                    <div class="row skill-row">
+                        <div class="col-xs-4">
+                            <img src="img/skills/angularjs.png" alt="AngularJS" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="img/skills/nodejs.png" alt="Node.js" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="img/skills/ionic.png" alt="Ionic" class="img-responsive" />
+                        </div>
+                    </div>
+
+                    <div class="row skill-row">
+                        <div class="col-xs-4">
+                            <img src="img/skills/cordova.png" alt="Cordova" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="img/skills/laravel.png" alt="Laravel" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="img/skills/jquery.png" alt="jQuery" class="img-responsive" />
+                        </div>
+                    </div>
+
+                    <div class="row skill-row">
+                        <div class="col-xs-4">
+                            <img src="img/skills/java.png" alt="Java" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="img/skills/php.png" alt="PHP" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="img/skills/mysql.png" alt="MySQL" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row" id="work">
+                <div class="col-xs-12">
+                    <h2 class="page-title">Work Experience and Education</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row" id="contact">
+                <div class="col-xs-12">
+                    <h2 class="page-title">Contact Me</h2>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="js/particles.min.js"></script>
+        <!-- // <script src="js/jquery.stellar.min.js"></script> -->
+        <script src="js/shine.min.js"></script>
+        <script src="js/stickUp.min.js"></script>
+        <script src="js/ui.js"></script>
     </body>
 </html>
