@@ -22,67 +22,79 @@
             <div class="row" id="particles"></div>
         </div>
 
-        <header class="container" id="home-container">
-            <div class="row" id="home">
-                <div class="col-xs-12" id="head">
-                    <h1 class="banner-text" id="banner-name">Nicholas Egan</h1>
-                    <h3>mrcomputer.science</h3>
+        <div id="sizer">
 
-                    <ul class="list-inline" id="connect-buttons">
-                        <li>
-                            <a href="/downloads/Nicholas Egan Resume.pdf" target="_blank" class="btn btn-default btn-lg">
-                                <i class="fa fa-download"></i> Resume
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/egansoft" target="_blank" class="btn btn-default btn-lg">
-                                <i class="fa fa-github"></i> GitHub
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/nicholasegansoft" target="_blank" class="btn btn-default btn-lg">
-                                <i class="fa fa-linkedin"></i> LinkedIn
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://challengepost.com/nicholasegan" target="_blank" class="btn btn-default btn-lg">
-                                <i class="fa fa-code"></i> ChallengePost
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://egansoft.com" target="_blank" class="btn btn-default btn-lg">
-                                <i class="fa fa-circle-o-notch"></i> Company
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </header>
+            <header class="container" id="home-container">
+                <div class="row" id="home">
+                    <div class="col-xs-12" id="head">
+                        <h1 class="banner-text" id="banner-name">Nicholas Egan</h1>
+                        <h3>Programmer, engineer, student, hacker, entrepreneur</h3>
 
-        <div class="container-fluid" id="navbar-wrap">
-            <nav class="navbar navbar-default" id="nav-out">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item active"><a href="#">Home</a></li>
-                            <li class="nav-item"><a href="#about">About</a></li>
-                            <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
-                            <li class="nav-item"><a href="#work">Work &amp; Education</a></li>
-                            <li class="nav-item"><a href="#skills">Skills</a></li>
-                            <li class="nav-item"><a href="#contact">Contact</a></li>
+                        <ul class="list-inline row" id="connect-buttons">
+                            <li>
+                                <a href="/downloads/Nicholas Egan Resume.pdf" target="_blank" class="btn btn-default btn-lg">
+                                    <i class="fa fa-download"></i> Resume
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/egansoft" target="_blank" class="btn btn-default btn-lg">
+                                    <i class="fa fa-github"></i> GitHub
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/nicholasegansoft" target="_blank" class="btn btn-default btn-lg">
+                                    <i class="fa fa-linkedin"></i> LinkedIn
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://challengepost.com/nicholasegan" target="_blank" class="btn btn-default btn-lg">
+                                    <i class="fa fa-code"></i> ChallengePost
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://egansoft.com" target="_blank" class="btn btn-default btn-lg">
+                                    <i class="fa fa-circle-o-notch"></i> Company
+                                </a>
+                            </li>
                         </ul>
-                    </div><!--/.nav-collapse -->
-                </div><!--/.container-fluid -->
-            </nav>
+                    </div>
+                </div>
+
+                <span class="scroll-btn hidden-xs wow fadeInDownBig">
+                   <a href="#about"><span class="mouse"><span></span></span></a>
+               </span>
+            </header>
+
+            <div id="menu" class="container-fluid">
+                <div id="navbar-wrap">
+                    <nav class="navbar navbar-default" id="nav-out">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="nav-item active"><a href="#">Home</a></li>
+                                    <li class="nav-item"><a href="#about">About</a></li>
+                                    <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+                                    <li class="nav-item"><a href="#work">Work &amp; Education</a></li>
+                                    <li class="nav-item"><a href="#skills">Skills</a></li>
+                                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                                </ul>
+                            </div><!--/.nav-collapse -->
+                        </div><!--/.container-fluid -->
+                    </nav>
+                </div>
+
+
+            </div>
+
         </div>
 
         <div class="container-fluid section-container" id="about-container">
@@ -108,6 +120,13 @@
                             interning at research labs and software corporations, assembling teams to take to hackathons,
                             and creating web apps to help members of my community.
                         </p>
+
+                        <div class="col-sm-12">
+                            <a href="/downloads/Nicholas Egan Resume.pdf" target="_blank" class="btn btn-default btn-lg" id="about-resume">
+                                <i class="fa fa-download"></i> Download Resume
+                            </a>
+
+                        </div>
                     </div>
 
                     <div class="col-sm-3 col-sm-offset-1">
@@ -123,10 +142,24 @@
                 <section class="row" id="portfolio">
 
                     <div class="col-xs-12">
-                        <h2 class="page-title">Top Software Projects</h2>
+                        <h2 class="page-title">Portfolio</h2>
                     </div>
 
-                    <div class="col-xs-12">
+                    <div class="col-xs-12" id="portfolio-switcher">
+                        <div class="btn-group btn-group-justified" role="group">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default active" id="portfolio-b0">Top Products</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default" id="portfolio-b1">Miscellaneous Projects</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default" id="portfolio-b2">Client Web Design</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 portfolio-set" id="portfolio-s0">
 
                         <div class="row portfolio-row">
                             <div class="col-sm-4">
@@ -256,6 +289,265 @@
                         </div>
 
                     </div>
+
+
+                    <div class="col-xs-12 portfolio-set portfolio-later-set" id="portfolio-s1">
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="https://play.google.com/store/apps/details?id=com.nre.realrandom" target="_blank">
+                                    <img src="img/portfolio/realrandom.png" class="img-responsive portfolio-image"
+                                        alt="RealRandom" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="https://play.google.com/store/apps/details?id=com.nre.realrandom" target="_blank">
+                                        RealRandom
+                                    </a>
+                                </h3>
+
+                                <p class="description-text">Random numbers from computers are not truly random, as they use
+                                    formulas for calculating their numbers. RealRandom on the other hand uses real random numbers, through
+                                    Random.org's api which provides random numbers based on a truly random atmospheric noise. As a
+                                    result, you get authentic random numbers suitable for drawings, games, bets, or any time you need
+                                    to do something randomly.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="http://egansoft.github.io/2048hack" target="_blank">
+                                    <img src="img/portfolio/hack2048.png" class="img-responsive portfolio-image"
+                                        alt="2048 Hack Version" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="http://egansoft.github.io/2048hack" target="_blank">
+                                        2048 Hack Version
+                                    </a>
+                                </h3>
+
+                                <p class="description-text">Tired of all your friends doing better than you at 2048? The 2048 Hack
+                                    Version lets you set the value of the generated tiles, allowing you to beat all of their scores.
+                                    Alternatively, you could also set the starting value to a strange number or a word and see what
+                                    happens. Just type the value in the box and start playing.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="http://www.teclawoffices.com" target="_blank">
+                                    <img src="img/portfolio/cooperlaw.png" class="img-responsive portfolio-image"
+                                        alt="Cooper Law Offices" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="http://www.teclawoffices.com" target="_blank">Cooper Law Offices</a>
+                                    <span class="portfolio-with">(with Aaron Barbieri-Aghib)</span>
+                                </h3>
+
+                                <p class="description-text">Cooper Law Offices is a legal firm based in Marin, California.
+                                    Egansoft worked with their team to develop a site that provides an overview of their business
+                                    and areas of expertise. They did not have any established logos or corporate designs for us to
+                                    work with, so the possibilities were wide open for our own design recommendations.  Mr. Cooper
+                                    wanted a clean look and feel to the site that portrayed sound legal counsel and expertise in
+                                    commercial real estate transactions, construction and issues, entity formation, as well as estate
+                                    planning. As evident, we were successful in delivering on Mr. Cooper’s goals and expectations.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="http://econolodgeseaside.com" target="_blank">
+                                    <img src="img/portfolio/econolodge.png" class="img-responsive portfolio-image"
+                                        alt="Econo Lodge Seaside" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="http://econolodgeseaside.com" target="_blank">Econo Lodge Seaside</a>
+                                    <span class="portfolio-with">(with Michael Lin)</span>
+                                </h3>
+
+                                <p class="description-text">Econo Lodge, as the name suggests, is one of Choice Hotel
+                                    brands that targets the lower budget traveler. As a sister company to Quality Inn Monterey
+                                    Fairgrounds, Econo Lodge Seaside is faced with even greater challenges when it comes to
+                                    competition as its location is less desirable than Monterey. Based on our success
+                                    with Quality Inn, the owner, hired our services to develop the Econo Lodge site with a consistent
+                                    look and feel of its sister property as well as cross-selling opportunities. This is where we
+                                    had to be creative in our approach to successfully deliver an affordable but high quality product.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="http://www.marinyouthcourt.org" target="_blank">
+                                    <img src="img/portfolio/myc.png" class="img-responsive portfolio-image"
+                                        alt="Marin Youth Court" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="http://www.marinyouthcourt.org" target="_blank">Marin Youth Court</a>
+                                    <span class="portfolio-with">(with Michael Lin and Aaron Barbieri-Aghib)</span>
+                                </h3>
+
+                                <p class="description-text">Marin Youth Court is an innovative approach to juvenile justice
+                                    and an early intervention for first-time misdemeanor offenders. They strive to educate
+                                    youth about the juvenile justice system, and through direct participation address each
+                                    juvenile's responsibility for their behavior and holds them accountable to their community
+                                    and peers. We worked closely with this organization to build an online presense in
+                                    order to better reach volunteers, sponsors, and troubled youth, as well as educate people
+                                    about the program.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-xs-12 portfolio-set portfolio-later-set" id="portfolio-s2">
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="http://www.qualityinnatmonterey.com/" target="_blank">
+                                    <img src="img/portfolio/qimonterey.png" class="img-responsive portfolio-image"
+                                        alt="Quality Inn Monterey Fairgrounds" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="http://www.qualityinnatmonterey.com/" target="_blank">Quality Inn Monterey Fairgrounds</a>
+                                    <span class="portfolio-with">(with Michael Lin)</span>
+                                </h3>
+
+                                <p class="description-text">Hospitality industry has become extremely competitive and even resort
+                                    destination spots such as Monterey, have experienced a downturn in revenues in the past several
+                                    years.  The owner of Quality Inn Monterey Fairgrounds decided that revamping of their ten year
+                                    old website was one of the most important steps for obtaining a competitive edge.  With that in
+                                    mind, Egansoft researched and redesigned their site to stand out among its competitors in hopes
+                                    of inspiring and drawing potential guests to their property.  We have been informed that their
+                                    occupancy rate has indeed increased significantly recently and we would like to believe that we
+                                    have successfully assisted in their success.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="http://www.ciseeducationfund.com" target="_blank">
+                                    <img src="img/portfolio/cise.png" class="img-responsive portfolio-image"
+                                        alt="CISE Education Fund" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="http://www.ciseeducationfund.com" target="_blank">
+                                        CISE Education Fund
+                                    </a>
+                                </h3>
+
+                                <p class="description-text">The CISE Education Fund was established by the Consortium of
+    								Information Systems Executives as an IRS 503c charity to assist underprivileged students to
+    								pursue Information Technology and Engineering degrees. CISE members donate their time to the
+    								charity in multiple fund raising activities to assist under privileged students and 100% of
+    								the funds raised by CISE Education Fund are donated to students. I worked closely with
+    								the board of directors to design, develop, finalize and launch this site in 15 hours.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="http://www.teclawoffices.com" target="_blank">
+                                    <img src="img/portfolio/cooperlaw.png" class="img-responsive portfolio-image"
+                                        alt="Cooper Law Offices" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="http://www.teclawoffices.com" target="_blank">Cooper Law Offices</a>
+                                    <span class="portfolio-with">(with Aaron Barbieri-Aghib)</span>
+                                </h3>
+
+                                <p class="description-text">Cooper Law Offices is a legal firm based in Marin, California.
+    								Egansoft worked with their team to develop a site that provides an overview of their business
+    								and areas of expertise. They did not have any established logos or corporate designs for us to
+    								work with, so the possibilities were wide open for our own design recommendations.  Mr. Cooper
+    								wanted a clean look and feel to the site that portrayed sound legal counsel and expertise in
+    								commercial real estate transactions, construction and issues, entity formation, as well as estate
+    								planning. As evident, we were successful in delivering on Mr. Cooper’s goals and expectations.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="http://econolodgeseaside.com" target="_blank">
+                                    <img src="img/portfolio/econolodge.png" class="img-responsive portfolio-image"
+                                        alt="Econo Lodge Seaside" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="http://econolodgeseaside.com" target="_blank">Econo Lodge Seaside</a>
+                                    <span class="portfolio-with">(with Michael Lin)</span>
+                                </h3>
+
+                                <p class="description-text">Econo Lodge, as the name suggests, is one of Choice Hotel
+    								brands that targets the lower budget traveler. As a sister company to Quality Inn Monterey
+    								Fairgrounds, Econo Lodge Seaside is faced with even greater challenges when it comes to
+    								competition as its location is less desirable than Monterey. Based on our success
+                                    with Quality Inn, the owner, hired our services to develop the Econo Lodge site with a consistent
+    								look and feel of its sister property as well as cross-selling opportunities. This is where we
+                                    had to be creative in our approach to successfully deliver an affordable but high quality product.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="http://www.marinyouthcourt.org" target="_blank">
+                                    <img src="img/portfolio/myc.png" class="img-responsive portfolio-image"
+                                        alt="Marin Youth Court" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="http://www.marinyouthcourt.org" target="_blank">Marin Youth Court</a>
+                                    <span class="portfolio-with">(with Michael Lin and Aaron Barbieri-Aghib)</span>
+                                </h3>
+
+                                <p class="description-text">Marin Youth Court is an innovative approach to juvenile justice
+                                    and an early intervention for first-time misdemeanor offenders. They strive to educate
+                                    youth about the juvenile justice system, and through direct participation address each
+                                    juvenile's responsibility for their behavior and holds them accountable to their community
+                                    and peers. We worked closely with this organization to build an online presense in
+                                    order to better reach volunteers, sponsors, and troubled youth, as well as educate people
+                                    about the program.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
 
                 </section>
             </div>

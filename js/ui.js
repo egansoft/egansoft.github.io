@@ -20,17 +20,17 @@ $(function($){
         numSteps: 5,
         opacity: 0.28,
         opacityPow: 1.2,
-        offset: 0.15,
+        offset: 0.25,
         offsetPow: 3.2,
         blur: 48,
         blurPow: 1
     }))
 
-    window.addEventListener('mousemove', function(event){
-        shine.light.position.x = event.clientX
-        shine.light.position.y = event.clientY
-        shine.draw()
-    }, false)
+    // window.addEventListener('mousemove', function(event){
+    //     shine.light.position.x = event.clientX
+    //     shine.light.position.y = event.clientY
+    //     shine.draw()
+    // }, false)
 
 })(Shine)
 
@@ -96,4 +96,26 @@ particlesJS('particles', {
     retina_detect: true
 })
 
-// $.stellar()
+;(function($) {
+    var sets = [
+        {button: $('#portfolio-b0'), set: $('#portfolio-s0')},
+        {button: $('#portfolio-b1'), set: $('#portfolio-s1')},
+        {button: $('#portfolio-b2'), set: $('#portfolio-s2')},
+    ]
+    var current = 0
+
+    sets.forEach(function(set, i, a) {
+        set.button.click(function(){
+            if(current === i)
+                return
+
+            a[current].set.hide()
+            a[current].button.removeClass('active')
+
+            set.set.show()
+            set.button.addClass('active')
+
+            current = i
+        })
+    })
+})($)

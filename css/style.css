@@ -20,6 +20,14 @@ html {
     background-color:#fff;
 }
 
+#about-resume {
+    margin:auto;
+    display:block;
+    margin-top:30px;
+    max-width:30%;
+    min-width:300px;
+}
+
 #bio-start {
     margin-top:20px;
 }
@@ -45,6 +53,15 @@ html {
 
 #me-img {
     border-radius:5%;
+}
+
+#menu {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    margin-top:0;
+    padding:0;
+    z-index:100;
 }
 
 #navbar-wrap {
@@ -83,6 +100,23 @@ html {
     margin-bottom:50px;
 }
 
+#portfolio-switcher {
+    margin-bottom:30px;
+    padding:0;
+}
+
+#portfolio-switcher button {
+    outline:none;
+}
+
+#sizer {
+    height:100%;
+}
+
+.portfolio-later-set {
+    display:none;
+}
+
 .page-title {
     text-align:center;
 }
@@ -115,4 +149,12 @@ html {
 
 .skill-row {
     margin-bottom:25px;
+}
+
+@media (max-width: 767px) {
+    #connect-buttons > li {
+        display: block;
+        margin-bottom: 15px;
+        padding: 0;
+    }
 }
