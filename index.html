@@ -18,13 +18,15 @@
             <h1>Nicholas Egan</h1>
         </div> -->
 
-        <div class="container-fluid" id="particles-wrap">
-            <div class="row" id="particles"></div>
-        </div>
+
 
         <div id="sizer">
+            <div id="particles-wrap">
+                <div class="row" id="particles"></div>
+            </div>
 
             <header class="container" id="home-container">
+
                 <div class="row" id="home">
                     <div class="col-xs-12" id="head">
                         <h1 class="banner-text" id="banner-name">Nicholas Egan</h1>
@@ -79,8 +81,8 @@
                                 </button>
                             </div>
                             <div id="navbar" class="navbar-collapse collapse">
-                                <ul class="nav navbar-nav">
-                                    <li class="nav-item active"><a href="#">Home</a></li>
+                                <ul class="nav navbar-nav" id="nav-links">
+                                    <li class="nav-item active"><a href="#head">Home</a></li>
                                     <li class="nav-item"><a href="#about">About</a></li>
                                     <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
                                     <li class="nav-item"><a href="#work">Work &amp; Education</a></li>
@@ -111,7 +113,7 @@
 
                         <p id="bio-start">
                             Ever since I picked up coding at age 10, the power to create has been an irresistable pull.
-                            I taught myself by pouring over books, and was blown away by the possibilities when I
+                            I taught myself by poring over books, and was blown away by the possibilities when I
                             discovered how software development could unleash my ideas and make them real. I started
                             <a href="http://egansoft.com" target="_blank">Egansoft</a> in 7th grade initially as a
                             repository for my ever growing list of programming projects, and eventually into a business
@@ -137,6 +139,7 @@
             </div>
         </div>
 
+        <!-- Portfolio -->
         <div class="container-fluid section-container" id="portfolio-container">
             <div class="container">
                 <section class="row" id="portfolio">
@@ -295,24 +298,49 @@
 
                         <div class="row portfolio-row">
                             <div class="col-sm-4">
-                                <a href="https://play.google.com/store/apps/details?id=com.nre.realrandom" target="_blank">
-                                    <img src="img/portfolio/realrandom.png" class="img-responsive portfolio-image"
-                                        alt="RealRandom" />
+                                <a href="http://egansoft.com/civhelp/" target="_blank">
+                                    <img src="img/portfolio/civtool.png" class="img-responsive portfolio-image"
+                                        alt="Civ Music Tool" />
                                 </a>
                             </div>
 
                             <div class="col-sm-8 portfolio-description">
                                 <h3 class="portfolio-title">
-                                    <a href="https://play.google.com/store/apps/details?id=com.nre.realrandom" target="_blank">
-                                        RealRandom
-                                    </a>
+                                    <a href="http://egansoft.com/civhelp/" target="_blank">Civ Music Tool</a>
                                 </h3>
 
-                                <p class="description-text">Random numbers from computers are not truly random, as they use
-                                    formulas for calculating their numbers. RealRandom on the other hand uses real random numbers, through
-                                    Random.org's api which provides random numbers based on a truly random atmospheric noise. As a
-                                    result, you get authentic random numbers suitable for drawings, games, bets, or any time you need
-                                    to do something randomly.
+                                <p class="description-text">Western Civilizations, or Civ, is a challenging required class
+                                    at my high school in which sophmores learn about European history, music, and art
+                                    from the Greeks until now. Many believe the most challenging part of Civ tests to be
+                                    the music listening section, in which different parts of pieces we studied are played
+                                    for us to identify and write about. The Civ Music Tool simulates this section
+                                    of the test by randomly generating snippets of songs we need to know and playing them
+                                    back so the user can practice identifying them. This tool became immensely popular, with up to 70% of
+                                    the class using it to study before tests, leading to my school's Academic Dean and
+                                    Head of School catching wind of it and asking that it be maintained for use by
+                                    future UHS students.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="http://crushplanner.com" target="_blank">
+                                    <img src="img/portfolio/crushplanner.png" class="img-responsive portfolio-image"
+                                        alt="Crush Planner" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="http://crushplanner.com" target="_blank">Crush Planner</a>
+                                </h3>
+
+                                <p class="description-text">Crush Planner is an online task management system that allows
+                                    you to not just finish your work, but demolish it. Create crush plans for homework
+                                    assignments, projects, presentations, chores, or anything else and make it whimper in
+                                    pain as you show it no mercy. It is currently in beta (i.e. has issues), and can be
+                                    forked on <a href="https://github.com/egansoft/crushplanner" target="_blank">GitHub</a>.
                                 </p>
                             </div>
                         </div>
@@ -342,75 +370,47 @@
 
                         <div class="row portfolio-row">
                             <div class="col-sm-4">
-                                <a href="http://www.teclawoffices.com" target="_blank">
-                                    <img src="img/portfolio/cooperlaw.png" class="img-responsive portfolio-image"
-                                        alt="Cooper Law Offices" />
+                                <a href="https://play.google.com/store/apps/details?id=com.nre.realrandom" target="_blank">
+                                    <img src="img/portfolio/realrandom.png" class="img-responsive portfolio-image"
+                                        alt="RealRandom" />
                                 </a>
                             </div>
 
                             <div class="col-sm-8 portfolio-description">
                                 <h3 class="portfolio-title">
-                                    <a href="http://www.teclawoffices.com" target="_blank">Cooper Law Offices</a>
-                                    <span class="portfolio-with">(with Aaron Barbieri-Aghib)</span>
+                                    <a href="https://play.google.com/store/apps/details?id=com.nre.realrandom" target="_blank">
+                                        RealRandom
+                                    </a>
                                 </h3>
 
-                                <p class="description-text">Cooper Law Offices is a legal firm based in Marin, California.
-                                    Egansoft worked with their team to develop a site that provides an overview of their business
-                                    and areas of expertise. They did not have any established logos or corporate designs for us to
-                                    work with, so the possibilities were wide open for our own design recommendations.  Mr. Cooper
-                                    wanted a clean look and feel to the site that portrayed sound legal counsel and expertise in
-                                    commercial real estate transactions, construction and issues, entity formation, as well as estate
-                                    planning. As evident, we were successful in delivering on Mr. Cooper’s goals and expectations.
+                                <p class="description-text">Random numbers from computers are not truly random, as they use
+                                    formulas for calculating their numbers. RealRandom on the other hand uses real random numbers, through
+                                    Random.org's api which provides random numbers based on a truly random atmospheric noise. As a
+                                    result, you get authentic random numbers suitable for drawings, games, bets, or any time you need
+                                    to do something randomly.
                                 </p>
                             </div>
                         </div>
 
                         <div class="row portfolio-row">
                             <div class="col-sm-4">
-                                <a href="http://econolodgeseaside.com" target="_blank">
-                                    <img src="img/portfolio/econolodge.png" class="img-responsive portfolio-image"
-                                        alt="Econo Lodge Seaside" />
+                                <a href="http://egansoft.com/password/" target="_blank">
+                                    <img src="img/portfolio/passwordgenerator.png" class="img-responsive portfolio-image"
+                                        alt="Word Based Password Generator" />
                                 </a>
                             </div>
 
                             <div class="col-sm-8 portfolio-description">
                                 <h3 class="portfolio-title">
-                                    <a href="http://econolodgeseaside.com" target="_blank">Econo Lodge Seaside</a>
-                                    <span class="portfolio-with">(with Michael Lin)</span>
+                                    <a href="http://egansoft.com/password/" target="_blank">Word Based Password Generator</a>
                                 </h3>
 
-                                <p class="description-text">Econo Lodge, as the name suggests, is one of Choice Hotel
-                                    brands that targets the lower budget traveler. As a sister company to Quality Inn Monterey
-                                    Fairgrounds, Econo Lodge Seaside is faced with even greater challenges when it comes to
-                                    competition as its location is less desirable than Monterey. Based on our success
-                                    with Quality Inn, the owner, hired our services to develop the Econo Lodge site with a consistent
-                                    look and feel of its sister property as well as cross-selling opportunities. This is where we
-                                    had to be creative in our approach to successfully deliver an affordable but high quality product.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="row portfolio-row">
-                            <div class="col-sm-4">
-                                <a href="http://www.marinyouthcourt.org" target="_blank">
-                                    <img src="img/portfolio/myc.png" class="img-responsive portfolio-image"
-                                        alt="Marin Youth Court" />
-                                </a>
-                            </div>
-
-                            <div class="col-sm-8 portfolio-description">
-                                <h3 class="portfolio-title">
-                                    <a href="http://www.marinyouthcourt.org" target="_blank">Marin Youth Court</a>
-                                    <span class="portfolio-with">(with Michael Lin and Aaron Barbieri-Aghib)</span>
-                                </h3>
-
-                                <p class="description-text">Marin Youth Court is an innovative approach to juvenile justice
-                                    and an early intervention for first-time misdemeanor offenders. They strive to educate
-                                    youth about the juvenile justice system, and through direct participation address each
-                                    juvenile's responsibility for their behavior and holds them accountable to their community
-                                    and peers. We worked closely with this organization to build an online presense in
-                                    order to better reach volunteers, sponsors, and troubled youth, as well as educate people
-                                    about the program.
+                                <p class="description-text">The Word Based Password Generator creates passwords based off a
+                                    sequence of words instead of random, confusing characters, in order to create a password
+                                    that is not only secure, but also easier to remember. You can set the amount of words to
+                                    generate and how to separate them, as well as include symbols or numbers at the end in
+                                    order to comply with the requirements many sites put in place. This site was inspired
+                                    by xkcd #936, <a href="http://xkcd.com/936/" target="_blank">Password Strength</a>.
                                 </p>
                             </div>
                         </div>
@@ -553,7 +553,138 @@
             </div>
         </div>
 
-        <div class="container">
+        <!-- Work and Education -->
+        <div class="container-fluid section-container" id="work-container">
+            <div class="container">
+                <section class="row" id="work">
+
+                    <div class="col-xs-12">
+                        <h2 class="page-title" id="work-title">Work Experience and Education</h2>
+                    </div>
+
+                    <div class="col-xs-12 work-set">
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-8">
+                                <h3><em>CEO and Founder</em>, <strong>Egansoft</strong></h3>
+                                <h4>June 2010 – Present</h4>
+                                <ul>
+                                    <li>
+                                        Founded Egansoft as a software development firm through which I publish my applications
+                                    </li>
+                                    <li>
+                                        Offered web development servies, android applications, and educational tools
+                                    </li>
+                                    <li>
+                                        Recruited local students to join Egansoft and collaborate on projects
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <a href="http://egansoft.com" target="_blank">
+                                    <img src="img/work/egansoft.png" class="img-responsive work-image" alt="Egansoft" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-8">
+                                <h3><em>Research Intern</em>, <strong>Massachusetts Institute of Technology (MIT)</strong></h3>
+                                <h4>June 2014 – Present | Cambridge, MA</h4>
+                                <ul>
+                                    <li>
+                                        Assisted Professor Randall Davis in the Multimodal Understanding Group at the MIT
+                                        Computer Science and Artificial Intelligence Laboratory; focused on software
+                                        to enable natural interaction with information
+                                    </li>
+                                    <li>
+                                        Used sketch-based software to analyze psychological clock drawing tests
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <a href="http://groups.csail.mit.edu/mug/" target="_blank">
+                                    <img src="img/work/mit.png" class="img-responsive work-image" alt="MIT" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-8">
+                                <h3><em>Product Development Intern</em>, <strong>HyTrust</strong></h3>
+                                <h4>June 2013 – August 2013 | Mountain View, CA</h4>
+                                <ul>
+                                    <li>
+                                        Responsible for Java code included in company's HyTrust Appliance 3.5 product,
+                                        shipped in August
+                                    </li>
+                                    <li>
+                                         Participated in final quality assurance testing and fixed bugs prior to product shipping
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <a href="http://www.hytrust.com/" target="_blank">
+                                    <img src="img/work/hytrust.png" class="img-responsive work-image" alt="HyTrust" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-8">
+                                <h3><em>High School Student</em>, <strong>San Francisco University High School</strong></h3>
+                                <h4>August 2011 – June 2015 | San Francisco, CA</h4>
+                                <ul>
+                                    <li>
+                                        Served as Student Council Tech Liasion: elected by student council to provide technology
+                                        solutions to University High Students
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <a href="http://www.sfuhs.org" target="_blank">
+                                    <img src="img/work/uhs.png" class="img-responsive work-image" alt="SFUHS" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-8">
+                                <h3><em>Founder and President</em>, <strong>SFUHS Hack Club</strong></h3>
+                                <h4>September 2013 – June 2015 | San Francisco, CA</h4>
+                                <li>
+                                    Founded club to bring together students interested in software development
+                                </li>
+                                <li>
+                                    Developed web-based tools for Western Civilizations and Chemistry II courses, promoted by
+                                    teachers and school faculty members as learning aids for students.
+                                </li>
+                                <li>
+                                    Created online tool to track class participation that was used by teachers of Western Civilizations
+                                </li>
+                                <li>
+                                    Collaborated in conceptualizing ideas for software applications and developing them as a team
+                                    at hackathons
+                                </li>
+                            </div>
+
+                            <div class="col-sm-4">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="container section-container">
             <div class="row" id="skills">
                 <div class="col-xs-12">
                     <h2 class="page-title">My Skills</h2>
@@ -562,73 +693,71 @@
                 <div class="col-sm-12">
                     <div class="row skill-row">
                         <div class="col-xs-3">
-                            <img src="img/skills/js.png" alt="JavaScript" class="img-responsive" />
+                            <img src="img/skills/js.png" alt="JavaScript" title="JavaScript" class="img-responsive" />
                         </div>
                         <div class="col-xs-3">
-                            <img src="img/skills/android.png" alt="Android" class="img-responsive" />
+                            <img src="img/skills/android.png" alt="Android" title="Android Development" class="img-responsive" />
                         </div>
                         <div class="col-xs-3">
-                            <img src="img/skills/html5.png" alt="HTML5" class="img-responsive" />
+                            <img src="img/skills/html5.png" alt="HTML5" title="HTML5/CSS3" class="img-responsive" />
                         </div>
                         <div class="col-xs-3">
-                            <img src="img/skills/ruby.png" alt="Ruby" class="img-responsive" />
+                            <img src="img/skills/ruby.png" alt="Ruby" title="Ruby" class="img-responsive" />
                         </div>
                     </div>
 
                     <div class="row skill-row">
                         <div class="col-xs-4">
-                            <img src="img/skills/angularjs.png" alt="AngularJS" class="img-responsive" />
+                            <img src="img/skills/angularjs.png" alt="AngularJS" title="AngularJS" class="img-responsive" />
                         </div>
                         <div class="col-xs-4">
-                            <img src="img/skills/nodejs.png" alt="Node.js" class="img-responsive" />
+                            <img src="img/skills/nodejs.png" alt="Node.js" title="node.js" class="img-responsive" />
                         </div>
                         <div class="col-xs-4">
-                            <img src="img/skills/ionic.png" alt="Ionic" class="img-responsive" />
-                        </div>
-                    </div>
-
-                    <div class="row skill-row">
-                        <div class="col-xs-4">
-                            <img src="img/skills/cordova.png" alt="Cordova" class="img-responsive" />
-                        </div>
-                        <div class="col-xs-4">
-                            <img src="img/skills/laravel.png" alt="Laravel" class="img-responsive" />
-                        </div>
-                        <div class="col-xs-4">
-                            <img src="img/skills/jquery.png" alt="jQuery" class="img-responsive" />
+                            <img src="img/skills/ionic.png" alt="Ionic" title="Ionic Framework" class="img-responsive" />
                         </div>
                     </div>
 
                     <div class="row skill-row">
                         <div class="col-xs-4">
-                            <img src="img/skills/java.png" alt="Java" class="img-responsive" />
+                            <img src="img/skills/cordova.png" alt="Cordova" title="Apache Cordova" class="img-responsive" />
                         </div>
                         <div class="col-xs-4">
-                            <img src="img/skills/php.png" alt="PHP" class="img-responsive" />
+                            <img src="img/skills/laravel.png" alt="Laravel" title="Laravel Framework" class="img-responsive" />
                         </div>
                         <div class="col-xs-4">
-                            <img src="img/skills/mysql.png" alt="MySQL" class="img-responsive" />
+                            <img src="img/skills/jquery.png" alt="jQuery" title="jQuery" class="img-responsive" />
+                        </div>
+                    </div>
+
+                    <div class="row skill-row">
+                        <div class="col-xs-4">
+                            <img src="img/skills/java.png" alt="Java" title="Java" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="img/skills/php.png" alt="PHP" title="PHP" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="img/skills/mysql.png" alt="MySQL" title="MySQL" class="img-responsive" />
                         </div>
                     </div>
                 </div>
-
 
             </div>
         </div>
 
-        <div class="container">
-            <div class="row" id="work">
-                <div class="col-xs-12">
-                    <h2 class="page-title">Work Experience and Education</h2>
-                </div>
-            </div>
-        </div>
+        <!-- Contact -->
+        <div class="container-fluid" id="contact-container">
+            <div class="container">
+                <section class="row" id="contact">
+                    <div class="col-xs-12">
+                        <h2 class="page-title">Contact Me</h2>
+                        <p id="contact-text">
+                            To contact me, send me an email at <span class="email">contactnicholas (at) egansoft (dot) com</span>.
+                        </p>
+                    </div>
+                </section>
 
-        <div class="container">
-            <div class="row" id="contact">
-                <div class="col-xs-12">
-                    <h2 class="page-title">Contact Me</h2>
-                </div>
             </div>
         </div>
 

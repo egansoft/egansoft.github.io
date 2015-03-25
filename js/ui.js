@@ -15,29 +15,33 @@ $(function($){
     })
 })
 
+/*
 ;(function(Shine){
     var shine = new Shine(document.getElementById('banner-name'), new shinejs.Config({
         numSteps: 5,
-        opacity: 0.28,
+        opacity: 0.9,
         opacityPow: 1.2,
         offset: 0.25,
         offsetPow: 3.2,
         blur: 48,
-        blurPow: 1
+        blurPow: 1,
+        shadowRGB: new shinejs.Color(255,255,255)
     }))
 
-    // window.addEventListener('mousemove', function(event){
-    //     shine.light.position.x = event.clientX
-    //     shine.light.position.y = event.clientY
-    //     shine.draw()
-    // }, false)
+    window.addEventListener('mousemove', function(event){
+        shine.light.position.x = event.clientX
+        shine.light.position.y = event.clientY
+        shine.draw()
+    }, false)
 
 })(Shine)
+*/
 
+/*
 particlesJS('particles', {
     particles: {
         color: '#686868',
-        color_random: false,
+        color_random: true,
         shape: 'circle', // "circle", "edge" or "triangle"
         opacity: {
             opacity: 1,
@@ -50,11 +54,11 @@ particlesJS('particles', {
         },
         size: 4,
         size_random: true,
-        nb: 150,
+        nb: 125,
         line_linked: {
             enable_auto: true,
-            distance: 100,
-            color: '#686868',
+            distance: 50,
+            color_random: true,
             opacity: 1,
             width: 1,
             condensed_mode: {
@@ -92,10 +96,11 @@ particlesJS('particles', {
             }
         }
     },
-    /* Retina Display Support */
     retina_detect: true
 })
+*/
 
+// Switchy
 ;(function($) {
     var sets = [
         {button: $('#portfolio-b0'), set: $('#portfolio-s0')},
@@ -117,5 +122,16 @@ particlesJS('particles', {
 
             current = i
         })
+    })
+})($)
+
+// Clicky
+;(function($) {
+    $('#nav-links a').click(function(event) {
+        event.preventDefault()
+
+        $("html, body").stop().animate({
+            scrollTop: $($(this).attr("href")).offset().top - 50
+        }, 500, 'swing')
     })
 })($)
