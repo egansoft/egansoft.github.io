@@ -131,7 +131,7 @@ particlesJS('particles', {
         event.preventDefault()
 
         $("html, body").stop().animate({
-            scrollTop: $($(this).attr("href")).offset().top - 50
+            scrollTop: $($(this).attr("href")).offset().top - 45
         }, 500, 'swing')
     })
 })($)
