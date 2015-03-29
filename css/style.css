@@ -201,6 +201,10 @@ html {
     animation: bounce 2s infinite;
 }
 
+.btn-group > .btn.active {
+    z-index:0;
+}
+
 .email {
     font-family:monospace;
 }
@@ -311,6 +315,11 @@ html {
 
     #head {
         position:static;
+    }
+
+    #me-img {
+        margin:0 auto;
+        margin-top:20px;
     }
 
     #menu {
