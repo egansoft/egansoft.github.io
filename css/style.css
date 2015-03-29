@@ -205,6 +205,16 @@ html {
     font-family:monospace;
 }
 
+.nav {
+    float:none;
+    text-align:center;
+}
+
+.nav > li {
+    display: inline-block;
+    float:none;
+}
+
 .portfolio-later-set {
     display:none;
 }
