@@ -29,7 +29,7 @@
                 <div class="row" id="home">
                     <div class="col-xs-12" id="head">
                         <h1 class="banner-text" id="banner-name">Nicholas Egan</h1>
-                        <h3>Programmer, engineer, student, hacker, entrepreneur</h3>
+                        <h3>Engineer, researcher, student, hacker, entrepreneur</h3>
 
                         <ul class="list-inline row" id="connect-buttons">
                             <li>
@@ -122,8 +122,8 @@
                             available to learn more and do more, by founding and running a hack club at my high school,
                             interning at research labs and software corporations, assembling teams to take to hackathons,
                             and creating web apps to help members of my community. I am currently a student at MIT
-							studying Computer Science and Engineering (Course 6-3).
-						</p>
+                            studying Computer Science and Engineering (Course 6-3).
+                        </p>
 
                         <div class="col-sm-12">
                             <a href="downloads/Nicholas%20Egan%20Resume%20Online%20September%202017.pdf" target="_blank"
@@ -154,18 +154,67 @@
                     <div class="col-xs-12" id="portfolio-switcher">
                         <div class="btn-group btn-group-justified" role="group">
                             <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default active" id="portfolio-b0">Top Products</button>
+                                <button type="button" class="btn btn-default active" id="portfolio-b0">Top</button>
                             </div>
                             <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default" id="portfolio-b1">Miscellaneous Projects</button>
+                                <button type="button" class="btn btn-default" id="portfolio-b1">Misc</button>
                             </div>
                             <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default" id="portfolio-b2">Client Web Design</button>
+                                <button type="button" class="btn btn-default" id="portfolio-b2">Design</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-xs-12 portfolio-set" id="portfolio-s0">
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="http://beshowy.com/" target="_blank">
+                                    <img src="img/portfolio/gan.png" class="img-responsive portfolio-image" alt="Showy" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                  <a href="https://github.com/egansoft/generalized-gan-reversal" target="_blank">Generalized GAN Reversal</a>
+                                    <span class="portfolio-with">(with Jeffrey Zhang and Kevin Shen)</span>
+                                </h3>
+                                <p class="description-text">
+                                  The Generator of a Generative Adversarial Network (GAN) is trained to transform latent vectors
+                                  drawn from a prior distribution into realistic looking photos. These latent vectors have been
+                                  shown to encode information about the content of their corresponding images. Projecting input
+                                  images onto the latent space of a GAN is non trivial, but previous work has successfully performed
+                                  this task for latent spaces with a uniform prior. We extend these techniques to latent spaces with 
+                                  a Gaussian prior, and demonstrate our technique's effectiveness. Our paper is available
+                                  <a href="https://github.com/egansoft/generalized-gan-reversal/blob/master/generalized-gan-reversal.pdf" target="_blank">here</a>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="http://nchainz.com" target="_blank">
+                                    <img src="img/portfolio/nchainz.png" class="img-responsive portfolio-image" alt="N Chainz" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                  <a href="N Chainz" target="_blank">N Chainz</a>
+                                    <span class="portfolio-with">(with Ryan Senanayake and Lizzie Wei)</span>
+                                </h3>
+                                <p class="description-text">
+                                  N Chainz is a high performance, decentralized cryptocurrency exchange.
+                                  The most unique aspect of our design is the use of multiple blockchains to reach a unified consensus state:
+                                  we maintain a separate token chain for each token added to the exchange as well
+                                  as a match chain, which coordinates a loose consensus between tokens.
+                                  The reference implementation includes p2p nodes, miners, a matching engine, chain coordinators,
+                                  addresses and wallets, a client CLI, and an orderbook web interface.
+                                  Our code and whitepaper are available at
+                                  <a href="http://nchainz.com" target="_blank">nchainz.com</a>.
+                                </p>
+                            </div>
+                        </div>
 
                         <div class="row portfolio-row">
                             <div class="col-sm-4">
@@ -183,56 +232,6 @@
                                     It runs completely in the browser, allowing it to be completely cross-platform.
                                     Sign up at <a href="http://beshowy.com" target="_blank">beshowy.com</a> to create
                                     and show your presentations, or try out the demo.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="row portfolio-row">
-                            <div class="col-sm-4">
-                                <a href="http://challengepost.com/software/znapper-wp9rh" target="_blank">
-                                    <img src="img/portfolio/znapper.png" class="img-responsive portfolio-image" alt="Znapper" />
-                                </a>
-                            </div>
-
-                            <div class="col-sm-8 portfolio-description">
-                                <h3 class="portfolio-title">
-                                    <a href="http://challengepost.com/software/znapper-wp9rh" target="_blank">Znapper</a>
-                                    <span class="portfolio-with">(with Michael Lin, Julia Lu, and Ethan Ko)</span>
-                                </h3>
-                                <p class="description-text">Znapper allows friends to have category-based selfie battles.
-										Simply challenge your Facebook friend to a new battle and take a selfie that matches
-										the given prompt. Your friend will respond to this challenge with their own selfie that
-										matches the prompt, and your mutual Facebook friends will vote for the victor.
-										We made Znapper in 30 hours at the <a href="http://www.hshacks.com/" target="_blank">
-										HSHacks II</a> hackathon, and won the <a href="http://challengepost.com/software/znapper-wp9rh"
-										target="_blank">Most Creative</a> grand prize. Releases for both Android and iOS
-										are coming soon.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="row portfolio-row">
-                            <div class="col-sm-4">
-                                <a href="http://challengepost.com/software/znapper-wp9rh" target="_blank">
-                                    <img src="img/portfolio/auditionr.png" class="img-responsive portfolio-image" alt="Znapper" />
-                                </a>
-                            </div>
-
-                            <div class="col-sm-8 portfolio-description">
-                                <h3 class="portfolio-title">
-                                    <a href="http://challengepost.com/software/auditionr" target="_blank">Auditionr</a>
-                                    <span class="portfolio-with">(with Darin Minamoto and Chia Huang)</span>
-                                </h3>
-                                <p class="description-text">
-                                  Auditionr is a site that allows directors of plays or movies to find actors for their
-                                  productions. It was inspired by talks with friends in the acting industry who are
-                                  frustrated by the fact that one's ability to be cast in a production is often limited
-                                  by their location, connections, and luck. One of the largest advantages of in-person
-                                  auditions is that the actors can see each other and play off each other's acting, so
-                                  we replicated that experience by putting you in a live stream with people auditioning
-                                  for other parts of the same play so that you can act through the script together. We made Auditionr
-                                  in 36 hours at <a href="http://lahacks.com/" target="_blank">LA Hacks 2015</a> and won
-                                  the Best Use of Respoke API prize. A full online release will be coming soon.
                                 </p>
                             </div>
                         </div>
@@ -324,6 +323,57 @@
 
 
                     <div class="col-xs-12 portfolio-set portfolio-later-set" id="portfolio-s1">
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="http://challengepost.com/software/znapper-wp9rh" target="_blank">
+                                    <img src="img/portfolio/znapper.png" class="img-responsive portfolio-image" alt="Znapper" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="http://challengepost.com/software/znapper-wp9rh" target="_blank">Znapper</a>
+                                    <span class="portfolio-with">(with Michael Lin, Julia Lu, and Ethan Ko)</span>
+                                </h3>
+                                <p class="description-text">Znapper allows friends to have category-based selfie battles.
+										Simply challenge your Facebook friend to a new battle and take a selfie that matches
+										the given prompt. Your friend will respond to this challenge with their own selfie that
+										matches the prompt, and your mutual Facebook friends will vote for the victor.
+										We made Znapper in 30 hours at the <a href="http://www.hshacks.com/" target="_blank">
+										HSHacks II</a> hackathon, and won the <a href="http://challengepost.com/software/znapper-wp9rh"
+										target="_blank">Most Creative</a> grand prize. Releases for both Android and iOS
+										are coming soon.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="http://challengepost.com/software/znapper-wp9rh" target="_blank">
+                                    <img src="img/portfolio/auditionr.png" class="img-responsive portfolio-image" alt="Znapper" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="http://challengepost.com/software/auditionr" target="_blank">Auditionr</a>
+                                    <span class="portfolio-with">(with Darin Minamoto and Chia Huang)</span>
+                                </h3>
+                                <p class="description-text">
+                                  Auditionr is a site that allows directors of plays or movies to find actors for their
+                                  productions. It was inspired by talks with friends in the acting industry who are
+                                  frustrated by the fact that one's ability to be cast in a production is often limited
+                                  by their location, connections, and luck. One of the largest advantages of in-person
+                                  auditions is that the actors can see each other and play off each other's acting, so
+                                  we replicated that experience by putting you in a live stream with people auditioning
+                                  for other parts of the same play so that you can act through the script together. We made Auditionr
+                                  in 36 hours at <a href="http://lahacks.com/" target="_blank">LA Hacks 2015</a> and won
+                                  the Best Use of Respoke API prize. A full online release will be coming soon.
+                                </p>
+                            </div>
+                        </div>
+
 
                         <div class="row portfolio-row">
                             <div class="col-sm-4">
