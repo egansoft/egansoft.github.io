@@ -1,5 +1,4 @@
 body {
-    /*background-color:black;*/
     height:100%;
     font-size:16px;
 }
@@ -242,8 +241,8 @@ html {
 .portfolio-row {
     background-color:#fefefe;
     border-radius:5px;
-    margin-bottom:20px;
-    padding:25px;
+    margin-bottom:10px;
+    padding:10px;
 }
 
 .portfolio-title {
@@ -260,6 +259,7 @@ html {
     font-size:18px;
     color:#454545;
 }
+
 
 .section-container {
     padding:50px 0 130px 0;
