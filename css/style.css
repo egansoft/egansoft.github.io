@@ -17,6 +17,10 @@ h3 {
     color:#1f1209;
 }
 
+h3.panel-title {
+  font-weight:bold;
+}
+
 html {
     height:100% !important;
 }
@@ -170,6 +174,14 @@ html {
     background-size: cover;
 }
 
+#skills-container {
+  text-align:center;
+}
+
+#skills-title {
+  margin-bottom:40px;
+}
+
 #work-container {
     background-image: url('../img/back/3.jpg');
     padding-top:70px;
@@ -251,10 +263,6 @@ html {
 
 .section-container {
     padding:50px 0 130px 0;
-}
-
-.skill-row {
-    margin-bottom:25px;
 }
 
 @-moz-keyframes bounce {
