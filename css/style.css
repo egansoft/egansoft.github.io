@@ -261,6 +261,11 @@ html {
 }
 
 
+.portfolio-yt {
+    width:100%;
+    min-height:200px;
+}
+
 .section-container {
     padding:50px 0 130px 0;
 }

@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/style.css" />
-		<link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico">
 
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -29,7 +29,7 @@
                 <div class="row" id="home">
                     <div class="col-xs-12" id="head">
                         <h1 class="banner-text" id="banner-name">Nicholas Egan</h1>
-                        <h3>Engineer, researcher, student, hacker, entrepreneur</h3>
+                        <h3>Engineer, researcher, learner, hacker, entrepreneur</h3>
 
                         <ul class="list-inline row" id="connect-buttons">
                             <li>
@@ -168,9 +168,37 @@
 
                         <div class="row portfolio-row">
                             <div class="col-sm-4">
-                                <a href="http://beshowy.com/" target="_blank">
-                                    <img src="img/portfolio/gan.png" class="img-responsive portfolio-image" alt="Showy" />
-                                </a>
+                                <video src="img/portfolio/thesis.mp4" class="img-responsive portfolio-image" alt="Thesis" controls loop autoplay></video>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                  Natural Video Synthesis with Generative Adversarial Networks
+                                    <!--<span class="portfolio-with">(with Hang Zhao and Jun-Yan Zhu)</span>-->
+                                </h3>
+                                <p class="description-text">
+                                  Generative Adversarial Networks (GANs) are the state of the art neural network
+                                  models for image generation, but the use of GANs for video generation is still largely
+                                  unexplored.
+                                  My MEng thesis improves upon previous GAN based video generation models by
+                                  introducing the technique of model inflation and proposing the segmentation-to-video task. The
+                                  model inflation technique converts image GANs into video GANs,
+                                  and experiments show that model inflation improves training speed, training
+                                  stability, and output video quality. The segmentation-to-video task is that of turning
+                                  an input image segmentation mask into an output video matching that segmentation.
+                                  I created a GAN model to perform this task and demonstrated its usefulness as a creative tool
+                                  for turning hand-drawn sketches into realistic looking videos.
+                                  The full thesis is available <a href="downloads/thesis.pdf" target="_blank">here</a>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                  <!--<img src="img/portfolio/gan.png" class="img-responsive portfolio-image" alt="Showy" />-->
+                                  <iframe class="img-responsive portfolio-image portfolio-yt" src="https://www.youtube.com/embed/ZIgrQxu5hqo" 
+                                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
                             </div>
 
                             <div class="col-sm-8 portfolio-description">
@@ -187,6 +215,8 @@
                                   a Gaussian prior, and demonstrate our technique's effectiveness. This was our final project
                                   for 6.867, MIT's graduate level class on machine learning, and our paper is available
                                   <a href="https://github.com/egansoft/generalized-gan-reversal/blob/master/generalized-gan-reversal.pdf" target="_blank">here</a>.
+                                  This project won the <a href="https://engineeringblog.yelp.com/2019/02/yelp-dataset-challenge-round11-winner.html" target="_blank">
+                                  Yelp Dataset Challenge Round 11</a>.
                                 </p>
                             </div>
                         </div>
@@ -200,7 +230,7 @@
 
                             <div class="col-sm-8 portfolio-description">
                                 <h3 class="portfolio-title">
-                                  <a href="N Chainz" target="_blank">N Chainz</a>
+                                  <a href="http://nchainz.com" target="_blank">N Chainz</a>
                                     <span class="portfolio-with">(with Ryan Senanayake and Lizzie Wei)</span>
                                 </h3>
                                 <p class="description-text">
@@ -211,7 +241,9 @@
                                   The reference implementation includes p2p nodes, miners, a matching engine, chain coordinators,
                                   addresses and wallets, a client CLI, and an orderbook web interface.
                                   Our code and whitepaper are available at
-                                  <a href="http://nchainz.com" target="_blank">nchainz.com</a>.
+                                  <a href="http://nchainz.com" target="_blank">nchainz.com</a>. This project was one the winners
+                                  of the <a href="https://medium.com/binanceexchange/binance-concludes-dexathon-73fe9fc1987f" target="_blank">
+                                  Binance Dexathon</a>.
                                 </p>
                             </div>
                         </div>
@@ -248,43 +280,15 @@
                                     <a href="http://www.textinflator.com" target="_blank">Text Inflator</a>
                                 </h3>
                                 <p class="description-text">Text Inflator is a web application developed by Egansoft
-										that expands the length of a block of writing without adding any additional ideas, meaning,
-										or value. While it is not recommended to be used for actual formal assignments, it was
-										developed as a simple experiment employing tools from natural language processing. See it live
-										at <a href="http://www.textinflator.com" target="_blank">textinflator.com</a>
+                    that expands the length of a block of writing without adding any additional ideas, meaning,
+                    or value. Over 10 thousand users from around the world use it every month.
+                    While it is not recommended to be used for actual formal assignments, it was
+                    developed as a simple experiment employing tools from natural language processing. See it live
+                    at <a href="http://www.textinflator.com" target="_blank">textinflator.com</a>
                                 </p>
                             </div>
                         </div>
 
-                        <div class="row portfolio-row">
-                            <div class="col-sm-4">
-                                <a href="https://play.google.com/store/apps/details?id=com.teamturnt.brainhacks" target="_blank">
-                                    <img src="img/portfolio/brainhacks.png" class="img-responsive portfolio-image" alt="Brain Hacks" />
-                                </a>
-                            </div>
-
-                            <div class="col-sm-8 portfolio-description">
-                                <h3 class="portfolio-title">
-                                    <a href="https://play.google.com/store/apps/details?id=com.teamturnt.brainhacks" target="_blank">
-                                        Brain Hacks
-                                        <span class="portfolio-with">(with Michael Lin, Aaron Barbieri-Aghib, and Steven Povlitz)</span>
-                                    </a>
-                                </h3>
-
-                                <p class="description-text">Brain Hacks is a cross-platform mobile application that
-										measures the mental impairment of people who are tired, intoxicated, or concussed
-										in comparison to their baseline. We
-										are all familiar with these symptoms, but are bad at evaluating how much it is
-										affecting us. Brain Hacks uses a combination of medically proven and heuristic tests
-										to quantify an individual's mental abilities in four key areas that are the most apparent
-										detriments to mental state. We made this app in 48 hours at
-										<a href="http://challengepost.com/software/brain-hacks" target="blank">LAUNCH
-										Hackathon 2015</a>. It is available on the
-										<a href="https://play.google.com/store/apps/details?id=com.teamturnt.brainhacks" target="_blank">
-										Google Play App Store</a>, and an iOS version is coming soon.
-                                </p>
-                            </div>
-                        </div>
 
                         <div class="row portfolio-row">
                             <div class="col-sm-4">
@@ -302,19 +306,19 @@
                                 </h3>
 
                                 <p class="description-text">Physics Sketchpad is a physics simulator for Android in which one can
-										observe the effect of different forces upon objects. It can be used as a planet simulator
-										or projectile simulator if one adjusts the forces accordingly. Forces include gravity
-										between objects, global gravity, collision adjustments, drag, acceleration, and more.
-										Download it on the
-										<a href="https://play.google.com/store/apps/details?id=com.egansoft.physics.sketchpad"
-											target="_blank">
-											Google Play App Store</a>, or read reviews by
-										<a href="https://www.appolearning.com/android-apps/physics-sketchpad-beta/b37557e6-a5a4-11e4-8b07-bc764e05085a"
-											target="_blank">
-											AppoLearning</a> or
-										<a href="http://www.android4schools.com/2013/02/03/physics-sketchpad-a-physics-simulator-for-android/"
-											target="_blank">
-											Android 4 Schools</a>.
+                    observe the effect of different forces upon objects. It can be used as a planet simulator
+                    or projectile simulator if one adjusts the forces accordingly. Forces include gravity
+                    between objects, global gravity, collision adjustments, drag, acceleration, and more.
+                    Download it on the
+                    <a href="https://play.google.com/store/apps/details?id=com.egansoft.physics.sketchpad"
+                      target="_blank">
+                      Google Play App Store</a>, or read reviews by
+                    <a href="https://www.appolearning.com/android-apps/physics-sketchpad-beta/b37557e6-a5a4-11e4-8b07-bc764e05085a"
+                      target="_blank">
+                      AppoLearning</a> or
+                    <a href="http://www.android4schools.com/2013/02/03/physics-sketchpad-a-physics-simulator-for-android/"
+                      target="_blank">
+                      Android 4 Schools</a>.
                                 </p>
                             </div>
                         </div>
@@ -337,13 +341,43 @@
                                     <span class="portfolio-with">(with Michael Lin, Julia Lu, and Ethan Ko)</span>
                                 </h3>
                                 <p class="description-text">Znapper allows friends to have category-based selfie battles.
-										Simply challenge your Facebook friend to a new battle and take a selfie that matches
-										the given prompt. Your friend will respond to this challenge with their own selfie that
-										matches the prompt, and your mutual Facebook friends will vote for the victor.
-										We made Znapper in 30 hours at the <a href="http://www.hshacks.com/" target="_blank">
-										HSHacks II</a> hackathon, and won the <a href="http://challengepost.com/software/znapper-wp9rh"
-										target="_blank">Most Creative</a> grand prize. Releases for both Android and iOS
-										are coming soon.
+                    Simply challenge your Facebook friend to a new battle and take a selfie that matches
+                    the given prompt. Your friend will respond to this challenge with their own selfie that
+                    matches the prompt, and your mutual Facebook friends will vote for the victor.
+                    We made Znapper in 30 hours at the <a href="http://www.hshacks.com/" target="_blank">
+                    HSHacks II</a> hackathon, and won the <a href="http://challengepost.com/software/znapper-wp9rh"
+                    target="_blank">Most Creative</a> grand prize. Releases for both Android and iOS
+                    are coming soon.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-sm-4">
+                                <a href="https://play.google.com/store/apps/details?id=com.teamturnt.brainhacks" target="_blank">
+                                    <img src="img/portfolio/brainhacks.png" class="img-responsive portfolio-image" alt="Brain Hacks" />
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8 portfolio-description">
+                                <h3 class="portfolio-title">
+                                    <a href="https://play.google.com/store/apps/details?id=com.teamturnt.brainhacks" target="_blank">
+                                        Brain Hacks
+                                        <span class="portfolio-with">(with Michael Lin, Aaron Barbieri-Aghib, and Steven Povlitz)</span>
+                                    </a>
+                                </h3>
+
+                                <p class="description-text">Brain Hacks is a cross-platform mobile application that
+                    measures the mental impairment of people who are tired, intoxicated, or concussed
+                    in comparison to their baseline. We
+                    are all familiar with these symptoms, but are bad at evaluating how much it is
+                    affecting us. Brain Hacks uses a combination of medically proven and heuristic tests
+                    to quantify an individual's mental abilities in four key areas that are the most apparent
+                    detriments to mental state. We made this app in 48 hours at
+                    <a href="http://challengepost.com/software/brain-hacks" target="blank">LAUNCH
+                    Hackathon 2015</a>. It is available on the
+                    <a href="https://play.google.com/store/apps/details?id=com.teamturnt.brainhacks" target="_blank">
+                    Google Play App Store</a>, and an iOS version is coming soon.
                                 </p>
                             </div>
                         </div>
@@ -446,54 +480,6 @@
                                 </p>
                             </div>
                         </div>
-
-                        <div class="row portfolio-row">
-                            <div class="col-sm-4">
-                                <a href="https://play.google.com/store/apps/details?id=com.nre.realrandom" target="_blank">
-                                    <img src="img/portfolio/realrandom.png" class="img-responsive portfolio-image"
-                                        alt="RealRandom" />
-                                </a>
-                            </div>
-
-                            <div class="col-sm-8 portfolio-description">
-                                <h3 class="portfolio-title">
-                                    <a href="https://play.google.com/store/apps/details?id=com.nre.realrandom" target="_blank">
-                                        RealRandom
-                                    </a>
-                                </h3>
-
-                                <p class="description-text">Random numbers from computers are not truly random, as they use
-                                    formulas for calculating their numbers. RealRandom on the other hand uses real random numbers, through
-                                    Random.org's api which provides random numbers based on a truly random atmospheric noise. As a
-                                    result, you get authentic random numbers suitable for drawings, games, bets, or any time you need
-                                    to do something randomly.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="row portfolio-row">
-                            <div class="col-sm-4">
-                                <a href="http://egansoft.com/password/" target="_blank">
-                                    <img src="img/portfolio/passwordgenerator.png" class="img-responsive portfolio-image"
-                                        alt="Word Based Password Generator" />
-                                </a>
-                            </div>
-
-                            <div class="col-sm-8 portfolio-description">
-                                <h3 class="portfolio-title">
-                                    <a href="http://egansoft.com/password/" target="_blank">Word Based Password Generator</a>
-                                </h3>
-
-                                <p class="description-text">The Word Based Password Generator creates passwords based off a
-                                    sequence of words instead of random, confusing characters, in order to create a password
-                                    that is not only secure, but also easier to remember. You can set the amount of words to
-                                    generate and how to separate them, as well as include symbols or numbers at the end in
-                                    order to comply with the requirements many sites put in place. This site was inspired
-                                    by xkcd #936, <a href="http://xkcd.com/936/" target="_blank">Password Strength</a>.
-                                </p>
-                            </div>
-                        </div>
-
                     </div>
 
 
@@ -541,11 +527,11 @@
                                 </h3>
 
                                 <p class="description-text">The CISE Education Fund was established by the Consortium of
-    								Information Systems Executives as an IRS 503c charity to assist underprivileged students to
-    								pursue Information Technology and Engineering degrees. CISE members donate their time to the
-    								charity in multiple fund raising activities to assist under privileged students and 100% of
-    								the funds raised by CISE Education Fund are donated to students. I worked closely with
-    								the board of directors to design, develop, finalize and launch this site in 15 hours.
+                    Information Systems Executives as an IRS 503c charity to assist underprivileged students to
+                    pursue Information Technology and Engineering degrees. CISE members donate their time to the
+                    charity in multiple fund raising activities to assist under privileged students and 100% of
+                    the funds raised by CISE Education Fund are donated to students. I worked closely with
+                    the board of directors to design, develop, finalize and launch this site in 15 hours.
                                 </p>
                             </div>
                         </div>
@@ -565,12 +551,12 @@
                                 </h3>
 
                                 <p class="description-text">Cooper Law Offices is a legal firm based in Marin, California.
-    								Egansoft worked with their team to develop a site that provides an overview of their business
-    								and areas of expertise. They did not have any established logos or corporate designs for us to
-    								work with, so the possibilities were wide open for our own design recommendations.  Mr. Cooper
-    								wanted a clean look and feel to the site that portrayed sound legal counsel and expertise in
-    								commercial real estate transactions, construction and issues, entity formation, as well as estate
-    								planning. As evident, we were successful in delivering on Mr. Cooper’s goals and expectations.
+                    Egansoft worked with their team to develop a site that provides an overview of their business
+                    and areas of expertise. They did not have any established logos or corporate designs for us to
+                    work with, so the possibilities were wide open for our own design recommendations.  Mr. Cooper
+                    wanted a clean look and feel to the site that portrayed sound legal counsel and expertise in
+                    commercial real estate transactions, construction and issues, entity formation, as well as estate
+                    planning. As evident, we were successful in delivering on Mr. Cooper’s goals and expectations.
                                 </p>
                             </div>
                         </div>
@@ -590,11 +576,11 @@
                                 </h3>
 
                                 <p class="description-text">Econo Lodge, as the name suggests, is one of Choice Hotel
-    								brands that targets the lower budget traveler. As a sister company to Quality Inn Monterey
-    								Fairgrounds, Econo Lodge Seaside is faced with even greater challenges when it comes to
-    								competition as its location is less desirable than Monterey. Based on our success
+                    brands that targets the lower budget traveler. As a sister company to Quality Inn Monterey
+                    Fairgrounds, Econo Lodge Seaside is faced with even greater challenges when it comes to
+                    competition as its location is less desirable than Monterey. Based on our success
                                     with Quality Inn, the owner, hired our services to develop the Econo Lodge site with a consistent
-    								look and feel of its sister property as well as cross-selling opportunities. This is where we
+                    look and feel of its sister property as well as cross-selling opportunities. This is where we
                                     had to be creative in our approach to successfully deliver an affordable but high quality product.
                                 </p>
                             </div>
@@ -798,25 +784,60 @@
                             </div>
                         </div>
 
+                        <div class="row portfolio-row">
+                            <div class="col-sm-9">
+                                <h3><em>Masters Student</em>, <strong>Massachusetts Institute of Technology (MIT)</strong></h3>
+                                <h4>Cambridge, MA | 5.0 GPA</h4>
+                                <ul>
+                                    <li>
+                                      Candidate for Masters of Engineering with a concentration in Artificial Intelligence
+                                    </li>
+                                    <li>
+                                      Conducting research under Professor Antonio Torralba in CSAIL's Computer Vision Group,
+                                      with thesis "Natural Video Synthesis with Generative Adversarial Networks"
+                                    </li>
+                                    <li>
+                                        Related Graduate Coursework:
+                                        Machine Learning (6.867), Statistical Learning Theory and Applications (6.860),
+                                        Advanced Natural Language Processing (6.864),
+                                        Computer Vision (6.869),
+                                        Bayesian Modeling and Inference (6.435),
+                                        Distributed Systems (6.824),
+                                        Multicore Programming (6.816)
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <a href="http://www.mit.edu" target="_blank">
+                                    <img src="img/work/mit.png" class="img-responsive work-image" alt="MIT" />
+                                </a>
+                            </div>
+                        </div>
 
                         <div class="row portfolio-row">
                             <div class="col-sm-9">
                                 <h3><em>Student</em>, <strong>Massachusetts Institute of Technology (MIT)</strong></h3>
-                                <h4>Cambridge, MA</h4>
+                                <h4>Cambridge, MA | 4.9 GPA</h4>
                                 <ul>
                                     <li>
                                       Candidate for Masters of Engineering and Bachelor of Science in Computer Science and Engineering (6-3)
                                     </li>
                                     <li>
-                                        GPA: 5.0/5.0, Member of Tau Beta Pi Engineering Honor Society
+                                        Member of Tau Beta Pi Engineering Honor Society
                                     </li>
                                     <li>
-                                        Related Coursework: 
-                                        Machine Learning (6.867), Distributed Systems (6.824), Advanced Natural Language Processing (6.864),
-                                        Intro to Machine Learning (6.036), Multicore Programming (6.816), Advanced Algorithms (6.046), 
-                                        Intro to Algorithms (6.006), Software Construction (6.005), Computer System Engineering (6.033), 
-                                        Matrix Methods (18.065), Computational Structures (6.004), Deep Learning (6.S191), EECS Lab (6.01), 
-                                        Math for Computer Science (6.042), Probabilistic Systems Analysis (6.041), Managerial Finance (15.401)
+                                        Related Undergraduate Coursework: 
+                                        Algorithms (6.046), 
+                                        Machine Learning (6.036),
+                                        Matrix Methods (18.065), 
+                                        Statistics (18.650),
+                                        Deep Learning (6.S191), 
+                                        Intro to Algorithms (6.006), 
+                                        Probabilistic Systems Analysis (6.041),
+                                        Software Construction (6.005), 
+                                        Computer System Engineering (6.033), 
+                                        Computational Structures (6.004), 
                                     </li>
                                 </ul>
                             </div>
@@ -871,93 +892,93 @@
                 <div class="col-sm-12">
                     <div class="row skill-row">
                         <div class="col-sm-4">
-														<div class="panel panel-info">
-															<div class="panel-heading">
+                            <div class="panel panel-info">
+                              <div class="panel-heading">
                                 <h3 class="panel-title">Machine Learning</h3>
                               </div>
 
-															<ul class="list-group">
-																<li class="list-group-item">Natural Language Processing</li>
-																<li class="list-group-item">Deep Learning</li>
-																<li class="list-group-item">Generative Models</li>
-																<li class="list-group-item">Matrix Methods</li>
-															</ul>
-														</div>
+                              <ul class="list-group">
+                                <li class="list-group-item">Generative Models</li>
+                                <li class="list-group-item">Natural Language Processing</li>
+                                <li class="list-group-item">Deep Learning</li>
+                                <li class="list-group-item">Matrix Methods</li>
+                              </ul>
+                            </div>
                         </div>
 
                         <div class="col-sm-4">
-														<div class="panel panel-info">
-															<div class="panel-heading">
+                            <div class="panel panel-info">
+                              <div class="panel-heading">
                                 <h3 class="panel-title">Distributed Computing</h3>
                               </div>
 
-															<ul class="list-group">
-																<li class="list-group-item">Consensus</li>
-																<li class="list-group-item">Replication</li>
-																<li class="list-group-item">Wait-Free Algorithms</li>
-																<li class="list-group-item">Blockchain Development</li>
-															</ul>
-														</div>
+                              <ul class="list-group">
+                                <li class="list-group-item">Consensus</li>
+                                <li class="list-group-item">Replication</li>
+                                <li class="list-group-item">Wait-Free Algorithms</li>
+                                <li class="list-group-item">Blockchain Development</li>
+                              </ul>
+                            </div>
                         </div>
 
                         <div class="col-sm-4">
-														<div class="panel panel-info">
-															<div class="panel-heading">
+                            <div class="panel panel-info">
+                              <div class="panel-heading">
                                 <h3 class="panel-title">Software Engineering</h3>
                               </div>
 
-															<ul class="list-group">
-																<li class="list-group-item">Test Driven Development</li>
-																<li class="list-group-item">Systems Engineering</li>
-																<li class="list-group-item">Multicore Programming</li>
-																<li class="list-group-item">Code Maintainability</li>
-															</ul>
-														</div>
+                              <ul class="list-group">
+                                <li class="list-group-item">Test Driven Development</li>
+                                <li class="list-group-item">Systems Engineering</li>
+                                <li class="list-group-item">Multicore Programming</li>
+                                <li class="list-group-item">Code Maintainability</li>
+                              </ul>
+                            </div>
                         </div>
 
                         <div class="col-sm-4">
-														<div class="panel panel-default">
-															<div class="panel-heading">
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
                                 <h3 class="panel-title">Tools</h3>
                               </div>
 
-															<ul class="list-group">
-																<li class="list-group-item">NumPy</li>
-																<li class="list-group-item">PyTorch</li>
-																<li class="list-group-item">Scikit Learn</li>
-																<li class="list-group-item">AWS EC2</li>
-															</ul>
-														</div>
+                              <ul class="list-group">
+                                <li class="list-group-item">NumPy</li>
+                                <li class="list-group-item">PyTorch</li>
+                                <li class="list-group-item">Scikit Learn</li>
+                                <li class="list-group-item">AWS EC2</li>
+                              </ul>
+                            </div>
                         </div>
 
                         <div class="col-sm-4">
-														<div class="panel panel-default">
-															<div class="panel-heading">
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
                                 <h3 class="panel-title">Languages</h3>
                               </div>
 
-															<ul class="list-group">
-																<li class="list-group-item">Python, Ruby</li>
-																<li class="list-group-item">Go, Java</li>
-																<li class="list-group-item">JavaScript, PHP</li>
-																<li class="list-group-item">Haskell, Solidty</li>
-															</ul>
-														</div>
+                              <ul class="list-group">
+                                <li class="list-group-item">Python, Ruby</li>
+                                <li class="list-group-item">Go, Java</li>
+                                <li class="list-group-item">JavaScript, PHP</li>
+                                <li class="list-group-item">Haskell, Solidty</li>
+                              </ul>
+                            </div>
                         </div>
 
                         <div class="col-sm-4">
-														<div class="panel panel-default">
-															<div class="panel-heading">
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
                                 <h3 class="panel-title">Hobbies</h3>
                               </div>
 
-															<ul class="list-group">
-																<li class="list-group-item">Flute</li>
-																<li class="list-group-item">DJing</li>
-																<li class="list-group-item">Taekwondo</li>
-																<li class="list-group-item">Archaeology</li>
-															</ul>
-														</div>
+                              <ul class="list-group">
+                                <li class="list-group-item">DJing</li>
+                                <li class="list-group-item">Flute</li>
+                                <li class="list-group-item">Taekwondo</li>
+                                <li class="list-group-item">Traveling</li>
+                              </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
