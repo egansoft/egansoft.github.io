@@ -230,6 +230,18 @@ html {
     float:none;
 }
 
+.portfolio-brief {
+    display: block;
+    font-size:15pt;
+    font-style:italic;
+    /*color:#454545;*/
+    color:#444;
+}
+
+.portfolio-brief a {
+    color:inherit;
+}
+
 .portfolio-later-set {
     display:none;
 }
@@ -247,6 +259,7 @@ html {
 
 .portfolio-title {
     margin-top:5px;
+    margin-bottom:5px;
 }
 
 .portfolio-title a {
@@ -260,10 +273,9 @@ html {
     color:#454545;
 }
 
-
 .portfolio-yt {
     width:100%;
-    min-height:200px;
+    min-height:215px;
 }
 
 .section-container {
